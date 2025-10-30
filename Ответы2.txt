@@ -18,6 +18,7 @@ public: публичный, общедоступный компонент кла
 4)На данный момент я бы использовал только public и private т.к они самые простые в понимании
 5)Для ограничения кода в заданных рамках(private), или наоборот предоставления части кода для все программы(public)
 
+Задание по методам
 class Program
 {
     static void Main() 
@@ -39,5 +40,27 @@ class Program
     {
         Console.WriteLine($"Сообщение: {message}");
 
+    }
+}
+Задание по классам
+
+var user1 = new USER();
+user1.Print();
+user1.ShowInfo();
+
+class USER
+{
+    public string login = "user123";
+    public string password = "qwerty";
+    public string email = "user@mail.ru";
+
+    public void Print()
+    {
+        Console.WriteLine($"Логин:{login} Пароль:{password} Почта:{email}");
+    }
+
+    public void ShowInfo()
+    {
+        Console.WriteLine("Пользователь создан!");
     }
 }
